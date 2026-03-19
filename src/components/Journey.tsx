@@ -118,7 +118,7 @@ export default function Journey() {
           <motion.div variants={fadeInUp} className="mt-16 bg-white/40 p-8 md:p-12 rounded-3xl shadow-lg relative border border-rose-200">
             <Quote className="absolute top-6 left-6 w-12 h-12 text-rose-300 opacity-50" />
             <p className="font-script text-3xl md:text-4xl leading-relaxed text-center text-rose-900 relative z-10 px-8">
-              "In you, I found a playful spirit that makes my heart laugh and a calm soul where my thoughts find rest. You are the perfect symphony of joy and depth, a melody I choose to listen to every single day."
+              &quot;In you, I found a playful spirit that makes my heart laugh and a calm soul where my thoughts find rest. You are the perfect symphony of joy and depth, a melody I choose to listen to every single day.&quot;
             </p>
           </motion.div>
         </div>
