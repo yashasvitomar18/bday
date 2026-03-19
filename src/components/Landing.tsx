@@ -24,7 +24,7 @@ function FloatingParticles() {
               duration,
               delay,
               repeat: Infinity,
-              ease: "linear",
+              ease: "linear" as any,
             }}
             className="absolute drop-shadow-md"
             style={{ width: size, height: size }}
@@ -46,27 +46,27 @@ export default function Landing() {
         <motion.section
           key="landing"
           exit={{ opacity: 0, scale: 0.95 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          transition={{ duration: 1, ease: "easeInOut" as any }}
           className="relative w-full h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#FFDEE9] to-[#B5FFFC] overflow-hidden"
         >
           <FloatingParticles />
-          
+
           {/* Soft Bokeh glowing spots */}
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" as any }}
             className="absolute top-1/4 left-1/3 w-96 h-96 bg-pink-300 rounded-full blur-[100px] pointer-events-none mix-blend-multiply"
           />
           <motion.div
             animate={{ scale: [1, 1.3, 1], opacity: [0.4, 0.6, 0.4] }}
-            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" as any, delay: 2 }}
             className="absolute bottom-1/4 right-1/3 w-[30rem] h-[30rem] bg-cyan-300 rounded-full blur-[120px] pointer-events-none mix-blend-multiply"
           />
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" as any, delay: 0.5 }}
             className="relative z-10 flex flex-col items-center text-center p-6"
           >
             <h1 className="font-script text-5xl md:text-7xl text-gray-800 drop-shadow-sm mb-8 font-bold">
